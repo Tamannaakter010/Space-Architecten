@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     margin: 0;
-    background-color: #000;
+    background-color: #0e0d0d;
     color: #eee;
     font-family: Poppins;
     font-size: 12px;
@@ -23,6 +23,30 @@ header a{
     color: #eee;
     margin-right: 40px;
 }
+
+nav a {
+    text-decoration: none; 
+    font-weight: 200px;
+    color: #eee; 
+    padding: 10px; 
+    position: relative; 
+}
+
+nav a::after {
+    content: '';
+    display: block; 
+    width: 0; 
+    height: 3px; 
+    background-color: rgb(33, 235, 10); 
+    position: absolute;
+    left: 0;
+    bottom: -4px; 
+    transition: width .5s; }
+
+nav a:hover::after {
+    width: 100%; 
+}
+
 /* carousel */
 .carousel{
     height: 100vh;
@@ -30,6 +54,7 @@ header a{
     width: 100vw;
     overflow: hidden;
     position: relative;
+    z-index: 1;
 }
 .carousel .list .item{
     width: 100%;
@@ -58,34 +83,43 @@ header a{
     font-weight: bold;
     letter-spacing: 10px;
 }
+.carousel .list .item .author .name{
+    color: #3af146;
+}
 .carousel .list .item .title,
 .carousel .list .item .topic{
-    font-size: 5em;
+    font-size: 3em;
     font-weight: bold;
     line-height: 1.3em;
 }
 .carousel .list .item .topic{
-    color: #f1683a;
+    color: #3af146;
 }
-.carousel .list .item .buttons{
+/* .carousel .list .item .buttons{
     display: grid;
     grid-template-columns: repeat(2, 130px);
     grid-template-rows: 40px;
     gap: 5px;
     margin-top: 20px;
-}
-.carousel .list .item .buttons button{
+    position: relative;
+    z-index: 2;
+} */
+/* .carousel .list .item .buttons button{
+    border-radius: 10px;
     border: none;
     background-color: #eee;
     letter-spacing: 3px;
     font-family: Poppins;
-    font-weight: 500;
-}
-.carousel .list .item .buttons button:nth-child(2){
+    font-weight: bold;
+    cursor: pointer; 
+    z-index: 3; 
+    position: relative;
+} */
+/* .carousel .list .item .buttons button:nth-child(2){
     background-color: transparent;
     border: 1px solid #fff;
     color: #eee;
-}
+} */
 /* thumbail */
 .thumbnail{
     position: absolute;
@@ -305,4 +339,82 @@ header a{
     .carousel .list .item .content .title{
         font-size: 30px;
     }
+}
+/* -----------------About Me-------- */
+
+ section .about{
+     top: 20px;
+    font-family: Arial, sans-serif;
+}
+.about-me-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('images/about\ us.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin-top: 10px; /* Margin at the top of the section */
+}
+
+.about-us-section {
+    position: relative;
+    width: 100%;
+    height:100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-us-section::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/about\ us.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(3px); /* Apply blur effect */
+    z-index: -1;
+    margin-top: 20px;
+}
+
+.about-us-content {
+    text-align: center;
+    background-color: #00000000; /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.about-us-content h1 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.profile-pic {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #00000000; /* To make the circular profile stand out */
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description {
+    color: #000000;
+    font-size: 12px;
 }
