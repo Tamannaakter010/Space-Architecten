@@ -46,3 +46,31 @@ function showSlider(type) {
         nextDom.click();
     }, timeAutoNext);
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById("fullscreen-modal");
+    const modalImg = document.getElementById("fullscreen-img");
+    const closeBtn = document.querySelector(".fullscreen-modal .close");
+
+    document.querySelectorAll('.gallery-card .card').forEach(card => {
+        card.addEventListener('click', function() {
+            const bgImage = this.style.backgroundImage;
+            const imageUrl = bgImage.slice(5, bgImage.length - 2); // Extract URL from background-image property
+            
+            // Add a slight delay to allow the hover effect to complete before opening the modal
+            setTimeout(() => {
+                modal.style.display = "block";
+                modalImg.src = imageUrl;
+            }, 400);
+        });
+    });
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    modal.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+});
