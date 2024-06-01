@@ -33,7 +33,7 @@ header {
     width: 100%; 
     max-width: none; 
     margin: 0; 
-    height: auto;
+    height: 50px;
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -56,7 +56,7 @@ nav a::after {
     background-color: #3af146;
     position: absolute;
     left: 0;
-    bottom: -3px;
+    bottom: -2px;
     transition: width .5s;
 }
 nav a:hover::after {
@@ -72,7 +72,7 @@ nav a:hover::after {
 
     header {
         flex-direction: column; /* Stack items vertically on small screens */
-        height: auto; /* Adjust height for stacked items */
+        height: 30px; /* Adjust height for stacked items */
     }
 }
 
@@ -388,6 +388,7 @@ nav a:hover::after {
     color: #000000;
     margin-bottom: 20px;
     font-size: 24px;
+    font-weight: bolder;
 }
 
 .profile-pic {
