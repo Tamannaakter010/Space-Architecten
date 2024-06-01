@@ -8,15 +8,7 @@ body {
     font-size: 12px;
 }
 
-.navbar {
-    display: flex;
-   
-    width: 100%; /* Full width */
-    position: fixed; /* Fixed position */
-    top: 0; /* Stick to the top */
-    z-index: 1000; /* Ensure it stays above other elements */
-    background-color: #0e0d0d; /* Background color to match the body */
-}
+
 /* Navbar styles */
 .navbar a {
     float: left;
@@ -324,35 +316,6 @@ nav a:hover::after {
     }
     .carousel .list .item .content .title {
         font-size: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Stack the items vertically */
-        align-items: center; /* Center align items */
-    }
-
-    .navbar a {
-        float: none; /* Remove float */
-        padding: 15px 20px; /* Increase padding */
-        width: 100%; /* Full width */
-        box-sizing: border-box; /* Ensure padding is included in width */
-        border-bottom: 1px solid #333; /* Add bottom border for separation */
-    }
-
-    .navbar a:last-child {
-        border-bottom: none; /* Remove bottom border from last item */
-    }
-
-    header {
-        height: auto; /* Adjust header height for content */
-        flex-direction: column; /* Stack the items vertically */
-    }
-
-    header a {
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 10px; /* Add bottom margin for spacing */
     }
 }
 /*------------------------About------------------------*/
