@@ -25,26 +25,27 @@ body {
     background-color: #f3efec;
     color: black;
     border-radius: 10px;
+    margin: 5px;
 }
 
 
 header {
-    width: 100%; /* Full width */
-    max-width: none; /* Remove max-width to allow full width */
-    margin: 0; /* Remove margin */
-    height: 50px;
+    width: 100%; 
+    max-width: none; 
+    margin: 0; 
+    height: auto;
     display: flex;
-    justify-content: center; /* Center the content */
+    justify-content: center; 
     align-items: center;
-    position: fixed; /* Fixed position */
-    top: 0; /* Stick to the top */
-    z-index: 1000; /* Ensure it stays above other elements */
-    background-color: #0e0d0d; /* Background color to match the body */
+    position: fixed; 
+    top: 0; 
+    z-index: 1000; 
+    background-color: #0e0d0d; 
 }
 
 header a {
     color: #eee;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 nav a::after {
@@ -55,11 +56,23 @@ nav a::after {
     background-color: #3af146;
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: -3px;
     transition: width .5s;
 }
 nav a:hover::after {
     width: 100%;
+}
+@media (max-width: 600px) {
+    .navbar a {
+        padding: 8px 5px; /* Reduce padding on small screens */
+        margin-right: 5px; /* Further reduce margin on small screens */
+        font-size: 10px; /* Reduce font size on small screens */
+    }
+
+    header {
+        flex-direction: column; /* Stack items vertically on small screens */
+        height: auto; /* Adjust height for stacked items */
+    }
 }
 
 /* Carousel */
