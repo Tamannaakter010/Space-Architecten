@@ -18,7 +18,7 @@ body {
     
     transition: background-color 0.5s, color 0.5s;
     font-weight: bold;
-  
+  justify-content: center;
     text-decoration: none;
     position: relative;
 }
@@ -312,7 +312,7 @@ nav a:hover::after {
         padding-right: 0;
     }
     .carousel .list .item .content .title {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 /*------------------------About------------------------*/
