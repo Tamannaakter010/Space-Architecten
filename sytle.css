@@ -66,7 +66,7 @@ nav a:hover::after {
     .navbar a {
         padding: 8px 5px; /* Reduce padding on small screens */
         margin-right: 5px; /* Further reduce margin on small screens */
-        font-size: 10px; /* Reduce font size on small screens */
+        font-size: 8px; /* Reduce font size on small screens */
         justify-content: center;
     }
 
