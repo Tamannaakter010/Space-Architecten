@@ -442,9 +442,10 @@ nav a:hover::after {
     margin-bottom: 30px;
 }
 .services-list div h2 {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 300;
     margin-bottom: 15px;
+    text-align: center;
 }
 .services-list div:hover {
     background-color: #525452;
@@ -486,7 +487,7 @@ nav a:hover::after {
 .layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #52f981);
     position: absolute;
     left: 0;
     top: 0;
@@ -510,7 +511,7 @@ nav a:hover::after {
 }
 .layer a {
     margin: 20px;
-    color: #020202;
+    color: #040b06;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -591,7 +592,7 @@ nav a:hover::after {
 }
 .fullscreen-modal .close:hover,
 .fullscreen-modal .close:focus {
-    color: #ba4a4a;
+    color: #69f27f;
 }
 .fullscreen-modal .modal-content {
     display: block;
