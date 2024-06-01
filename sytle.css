@@ -15,7 +15,7 @@ body {
     display: block;
     color: white;
     text-align: center;
-    padding: 10px 12px;
+    padding: 8px 10px;
     transition: background-color 0.5s, color 0.5s;
     font-weight: bold;
     text-decoration: none;
@@ -44,7 +44,7 @@ header {
 
 header a {
     color: #eee;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 nav a::after {
