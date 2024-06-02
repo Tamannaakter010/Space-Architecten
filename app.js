@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
-/*---------------------------active------------------------*/
+/*---------------------------active------------------------
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header .navbar a');
 
@@ -95,3 +95,4 @@ window.onscroll = () => {
         }
     });
 }
+*/
