@@ -66,6 +66,7 @@ nav a:hover::after {
 .archi{
     color: #3af146;
 }
+
 @media (max-width: 600px) {
     .navbar a {
         padding: 8px 5px; /* Reduce padding on small screens */
@@ -416,7 +417,26 @@ nav a:hover::after {
     font-size: 14px;
 }
 
+.social-icons a{
+    margin-top: 30px;
+  }
+  .social-icons a{
+    justify-self:center;
+    text-align: center;
+  
+    font-size: 30px;
+    margin-right: 15px;
+    color: #e04d09;
+    display: inline-block;
+    transition: transform 0.5s;
+  
+  }
+  .social-icons a:hover{
+    color: #19d919;
+    transform: translateY(-5px);
+  } 
 /* ------------------Services------------------------------ */
+
 .services-title {
     font-size: 40px;
     font-weight: bold;
@@ -454,6 +474,12 @@ nav a:hover::after {
 .services-list div:hover {
     background-color: #525452;
     transform: translateY(-10px);
+}
+.service-logo {
+    height: 40px; /* Logo height */
+    width: 40px; /* Logo width for making it round */
+    border-radius: 50%; /* Make the logo round */
+    margin-top: 10px; /* Space above the logo */
 }
 
 /* ------------------------------------Team-------------------------------------- */
@@ -649,7 +675,8 @@ nav a:hover::after {
 .empty {
     width: 100%;
     height: 100vh;
-    background-color: #eee;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -675,9 +702,10 @@ nav a:hover::after {
     width: 40px;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.8);
-    color: #eee;
+    color: #090808;
     text-align: center;
 }
+
 
 .form {
     display: flex;
@@ -716,7 +744,7 @@ nav a:hover::after {
 .form .contact-form textarea {
     width: 30rem;
     border: 0;
-    color: #eee;
+   color: #eee;
     background-color: transparent;
     margin: 20px;
     font-size: 17px;
@@ -743,7 +771,7 @@ nav a:hover::after {
     height: 40px;
     margin-top: -5px;
     cursor: pointer;
-    color: #fff;
+    
 }
 
 .form .contact-form input[type=submit]:hover {
@@ -797,61 +825,18 @@ nav a:hover::after {
 }
 /*-----------------------footer----------------------*/
 
-.footer {
+footer {
+    background-color: #3d4246; /* Light background color */
+    padding: 20px 0; /* Padding around the footer */
+    text-align: center; /* Center the text */
+    height: 10px;
+    font-size: 8px;
+}
+
+.footer-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
 }
 
-.menu {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-.menu img {
-    margin-right: 10px;
-}
-
-.social-icons {
-    margin-top: 30px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline-block;
-    transition: transform 0.5s;
-}
-
-.social-icons a:hover {
-    color: #ff004f;
-    transform: translateY(-5px);
-}
-@media (max-width: 600px) {
-    .footer {
-        padding: 20px 0;
-    }
-    
-    .social-icons a {
-        font-size: 24px;
-        margin-right: 10px;
-    }
-
-    .social-icons {
-        margin-top: 30px;
-    }
-    
-    .footer p {
-        font-size: 14px;
-        padding: 0 10px;
-    }
-}
