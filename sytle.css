@@ -475,12 +475,7 @@ nav a:hover::after {
     background-color: #525452;
     transform: translateY(-10px);
 }
-.service-logo {
-    height: 40px; /* Logo height */
-    width: 40px; /* Logo width for making it round */
-    border-radius: 50%; /* Make the logo round */
-    margin-top: 10px; /* Space above the logo */
-}
+
 
 /* ------------------------------------Team-------------------------------------- */
 #section {
@@ -777,6 +772,12 @@ nav a:hover::after {
 .form .contact-form input[type=submit]:hover {
     background-color: transparent;
     color: dodgerblue;
+}
+#msg{
+    color: #61b752;
+    margin-top: 5px;
+    display: block;
+    text-align: center;
 }
 
 .media {

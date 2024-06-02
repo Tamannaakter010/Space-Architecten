@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
-/*---------------------------active------------------------
+/*---------------------------active------------------------*/
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header .navbar a');
 
@@ -95,4 +95,25 @@ window.onscroll = () => {
         }
     });
 }
-*/
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzMH7V0UqwXTBmzWTNYDEK0fJuyDCpBW95ma1b2eZ42OJTaHXdvz6S2dAany3mAP7bA/exec';
+const form = document.querySelector('.submit-to-google-sheet');
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            if (response.ok) {
+                msg.innerHTML = "Message Sent Successfully";
+                setTimeout(() => {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            } else {
+                throw new Error('Network response was not ok.');
+            }
+        })
+        .catch(error => console.error('Error!', error.message));
+});

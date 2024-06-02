@@ -274,23 +274,23 @@
                        
                     </div>
         
-                    <form>
+                    <form class="submit-to-google-sheet">
                         <div class="form">
                             <div class="right">
                                 <div class="contact-form">
-                                    <input type="text" required>
+                                    <input type="text" name="Name" required>
                                     <span>Full Name</span>
                                 </div>
-        
+                
                                 <div class="contact-form">
-                                    <input type="email" required>
+                                    <input type="email" name="Email" required>
                                     <span>E-mail Id</span>
                                 </div>
                                 <div class="contact-form">
-                                    <textarea name="text" required></textarea>
+                                    <textarea name="Message" required></textarea>
                                     <span>Type your Message....</span>
                                 </div>
-        
+                
                                 <div class="contact-form">
                                     <input type="submit" name="submit">
                                 </div>
@@ -299,6 +299,7 @@
                     </form>
                     
                     <div class="empty"></div>
+                    <span id ="msg">Sucessful</span>
                 </div>
             </div>
              <footer>
