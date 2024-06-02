@@ -832,3 +832,22 @@ nav a:hover::after {
     color: #ff004f;
     transform: translateY(-5px);
 }
+@media (max-width: 600px) {
+    .footer {
+        padding: 20px 0;
+    }
+    
+    .social-icons a {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .social-icons {
+        margin-top: 30px;
+    }
+    
+    .footer p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
