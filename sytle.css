@@ -426,13 +426,13 @@ nav a:hover::after {
   
     font-size: 30px;
     margin-right: 15px;
-    color: #e04d09;
+    color: #1411e1;
     display: inline-block;
     transition: transform 0.5s;
   
   }
   .social-icons a:hover{
-    color: #19d919;
+    color: #3af146;
     transform: translateY(-5px);
   } 
 /* ------------------Services------------------------------ */
