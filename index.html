@@ -16,15 +16,15 @@
 <body>
     <header>
       
-        <nav class="navbar">
+        <nav>
             
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Space Team</a>
-            <a href="">Gallery</a>
-            <a href="">Engage</a>
-            
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#team">Space Team</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#engage">Engage</a>
+       
         </nav>
 
     </header>
@@ -119,7 +119,9 @@
         <div class="time"></div>
     </div>
     <!-- ---------------------About---------- -->
-    <section class="section-1">
+    <section id ="about">
+        <div id="about"></div>
+        <div class="container">
         <div class="about-title"><span class="span">A</span>bout</div>
         <section class="about-us-section">
             <div class="about-us-content">
@@ -147,7 +149,7 @@
         </section>
     </section>
     <!-- -----------------------services-------------- -->
-    <section class="section-2">
+    <section id="services">
         <div id="services"></div>
 <div class="container">
     <h1 class="services-title"><span class="span">S</span>ervices</h1>
@@ -179,27 +181,27 @@
         </section>
        
            <!-- --------------Team----------------- -->
-           <section class="section-3">
+           <section  id="team">
             <h1 class="team-title"><span class="span">S</span>pace Team</h1>
           <div class="container">
             
       <div class="team-list">
         <div class="team">
-            <img src="images/team 3.jpg">
+            <img src="images/CEO.jpeg">
             <div class="layer">
                 <h3>Tamanna Akter</h3>
                 <p> It Manager</p>
             </div>
         </div>
         <div class="team">
-            <img src="images/team 3.jpg">
+            <img src="images/CTO.jpeg">
             <div class="layer">
                 <h3>Online Fruits Shop</h3>
                 <p> online fruit shop provides a wide selection of fresh fruits.</p>
             </div>
         </div>
         <div class="team">
-            <img src="images/team 4.jpg">
+            <img src="images/It manager.jpeg">
             <div class="layer">
                 <h3>Online Game Zone</h3>
                 <p>
@@ -217,7 +219,7 @@
 </div> 
         </section>
         <!-- -------------------Gallary----------/ -->
-        <section class="section-4">
+        <section id="gallery">
             <div class="gallery-title"><span class="span">G</span>allery</div>
             <div class="gallery-card">
         
@@ -243,7 +245,7 @@
                 <div class="card" style="background-image: url('images/19.jpg');"></div>
                 <div class="card" style="background-image: url('images/20.jpeg');"></div>
                 <div class="card" style="background-image: url('images/21.jpeg');"></div>
-                <div class="card" style="background-image: url('images/22.jpeg');"></div>
+                <!-- <div class="card" style="background-image: url('images/22.jpeg');"></div> -->
                 <div class="card" style="background-image: url('images/23.jpg');"></div>
                 <div class="card" style="background-image: url('images/24.jpeg');"></div>
                 <div class="card" style="background-image: url('images/25.jpeg');"></div>
@@ -336,76 +338,89 @@
 </div>
 
         <!----------------------contact form-------------------------- -->
-        <div class="main-contact">Engage</div>
-        <section class="section-5">
-           
-            <div style="background-image: url(images/Screenshot\ 2024-06-01\ 223331.png)">
-                <div class="container">
-                    <div class="contact-header">
-                        <h1>Contact Us</h1>
-                    </div>
-                    <div class="contact-content">
-                        <div class="content-form">
-                            <div class="section-51">
-                              
-                                <h2>Address</h2>
-                                <p>
-                                    Koborkhana oposit of hospital,khulna <br>
-                                    Lorem, ipsum dolor. <br>
-                                    Lorem
-                                </p>
+        <section id="engage">
+                <!----------------------contact form-------------------------- -->
+                <div class="main-contact">Engage</div>
+                <div class="section-5">
+                   
+                    <div style="background-image: url(images/Screenshot\ 2024-06-01\ 223331.png)">
+                        <div class="container">
+                            <div class="contact-header">
+                                <h1>Contact Us</h1>
                             </div>
-                            <div class="section-51">
+                            <div class="contact-content">
+                                <div class="content-form">
+                                    <div class="section-51">
+                                      
+                                        <h2>Address</h2>
+                                        <p>
+                                            Koborkhana oposit of hospital,khulna <br>
+                                            Lorem, ipsum dolor. <br>
+                                            Lorem
+                                        </p>
+                                    </div>
+                                    <div class="section-51">
+                                       
+                                        <h2>Mobile</h2>
+                                        <p>0177-2556551</p>
+                                    </div>
+                                    <div class="section-51">
+                                      
+                                        <h2>E-mail</h2>
+                                        <p>nasir@gmail.com</p>
+                                    </div>
+                                </div>
                                
-                                <h2>Mobile</h2>
-                                <p>0177-2556551</p>
                             </div>
-                            <div class="section-51">
-                              
-                                <h2>E-mail</h2>
-                                <p>nasir@gmail.com</p>
-                            </div>
+                
+                            <form class="submit-to-google-sheet">
+                                <div class="form">
+                                    <div class="right">
+                                        <div class="contact-form">
+                                            <input type="text" name="Name" required>
+                                            <span>Full Name</span>
+                                        </div>
+                        
+                                        <div class="contact-form">
+                                            <input type="email" name="Email" required>
+                                            <span>E-mail Id</span>
+                                        </div>
+                                        <div class="contact-form">
+                                            <textarea name="Message" required></textarea>
+                                            <span>Type your Message....</span>
+                                        </div>
+                        
+                                        <div class="contact-form">
+                                            <input type="submit" name="submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                            <div class="empty"></div>
+                            <span id ="msg">Space Architecten</span>
                         </div>
-                       
                     </div>
+                     <footer>
         
-                    <form class="submit-to-google-sheet">
-                        <div class="form">
-                            <div class="right">
-                                <div class="contact-form">
-                                    <input type="text" name="Name" required>
-                                    <span>Full Name</span>
-                                </div>
-                
-                                <div class="contact-form">
-                                    <input type="email" name="Email" required>
-                                    <span>E-mail Id</span>
-                                </div>
-                                <div class="contact-form">
-                                    <textarea name="Message" required></textarea>
-                                    <span>Type your Message....</span>
-                                </div>
-                
-                                <div class="contact-form">
-                                    <input type="submit" name="submit">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    
-                    <div class="empty"></div>
-                    <span id ="msg">Space Architecten</span>
+                    <div>
+                       
+                        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+                    </div>
+                </footer> 
                 </div>
-            </div>
-             <footer>
-
-            <div>
+                </section>
+                
+          
+            <script src="app.js"></script>
+        </body>
+        </html>
+                <!-- /*-----------------------------------footer-------------------------*/ -->
                
-                <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
-            </div>
-        </footer> 
-        </section>
-        
+          
+            <script src="app.js"></script>
+        </body>
+        </html>
   
     <script src="app.js"></script>
 </body>

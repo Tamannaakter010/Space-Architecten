@@ -117,3 +117,22 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message));
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const sections = document.querySelectorAll('section');
+
+    function setActiveLink() {
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+
+        sections.forEach(section => {
+            if (window.location.hash === `#${section.id}`) {
+                document.querySelector(`a[href="#${section.id}"]`).classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('hashchange', setActiveLink);
+    setActiveLink();
+});

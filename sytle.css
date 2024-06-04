@@ -10,7 +10,8 @@ body {
 
 
 /* Navbar styles */
-.navbar a {
+
+nav a {
     float: left;
     display: block;
     color: white;
@@ -21,7 +22,10 @@ body {
     text-decoration: none;
     position: relative;
 }
-.navbar a:hover 
+nav a.active{
+    background-color: #404341;
+}
+nav a:hover 
 {
     background-color: #f3efec;
     color: black;
@@ -68,7 +72,7 @@ nav a:hover::after {
 }
 
 @media (max-width: 600px) {
-    .navbar a {
+    .nav a {
         padding: 8px 5px; /* Reduce padding on small screens */
         margin-right: 5px; /* Further reduce margin on small screens */
         font-size: 8px; /* Reduce font size on small screens */
@@ -339,22 +343,18 @@ nav a:hover::after {
 }
 /*------------------------About------------------------*/
 
-.section-1 {
-    padding: 30px 0;
-    font-family: Arial, sans-serif;
-    text-align: center; 
-}
-
 .about-title {
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 30px; /* Reduced margin-bottom */
+    text-align: center;
+    margin-bottom: 40px; /* Reduced margin-bottom */
     transition: color 0.3s, background-color 0.3s;
 }
-
 .about-title:hover {
     color: #3af146;
 }
+
+
 
 .about-us-section {
     margin-top: 30px; /* Reduced margin-top */
