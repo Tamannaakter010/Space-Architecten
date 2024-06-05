@@ -454,6 +454,7 @@ nav a:hover::after {
     margin-top: 20px; /* Reduced margin-top */
 }
 .services-list div {
+    
     background: #262626;
     padding: 40px;
     font-size: 13px;
