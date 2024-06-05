@@ -338,7 +338,7 @@ nav a:hover::after {
         padding-right: 0;
     }
     .carousel .list .item .content .title {
-        font-size: 20px;
+        font-size: 12px;
     }
 }
 /*------------------------About------------------------*/
@@ -822,9 +822,12 @@ nav a:hover::after {
     .media {
         position: absolute;
         top: 190vh;
-        right: 30px;
+        right: 35px;
+        width: 95%;
+        padding: 15px;
     }
 }
+
 /*-----------------------footer----------------------*/
 
 footer {
