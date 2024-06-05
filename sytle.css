@@ -73,17 +73,20 @@ nav a:hover::after {
 
 @media (max-width: 600px) {
     .nav a {
-        padding: 5px 5px; /* Reduce padding on small screens */
+        padding: 2px 2px; /* Reduce padding on small screens */
         margin-right: 2px; /* Further reduce margin on small screens */
         font-size: 5px; /* Reduce font size on small screens */
-        justify-content: center;
+      text-decoration: none;
     }
 
     header {
         flex-direction: column; /* Stack items vertically on small screens */
         height: 30px; /* Adjust height for stacked items */
     }
+    
 }
+
+
 
 /* Carousel */
 .carousel {
