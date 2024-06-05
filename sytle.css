@@ -73,9 +73,9 @@ nav a:hover::after {
 
 @media (max-width: 600px) {
     .nav a {
-        padding: 8px 5px; /* Reduce padding on small screens */
-        margin-right: 5px; /* Further reduce margin on small screens */
-        font-size: 8px; /* Reduce font size on small screens */
+        padding: 5px 5px; /* Reduce padding on small screens */
+        margin-right: 2px; /* Further reduce margin on small screens */
+        font-size: 5px; /* Reduce font size on small screens */
         justify-content: center;
     }
 
